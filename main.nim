@@ -32,7 +32,7 @@ var talon : vector[Card]
 talon.initVector
 
 #functie de printare
-proc prtTable()
+proc prtTable() 
 
 #adauga functie de shuffle
 proc shuffle[T](this : vector[T], cycles : int = 0) =
