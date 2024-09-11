@@ -40,7 +40,7 @@ proc addTail[T](this: var vector[T], toAdd: T)=
         this.head.next = nil
         this.head.prev = nil
         this.head.val = toAdd
-
+ 
         this.tail = this.head
     else:
         this.tail.next = cast[ptr node[T]](alloc(sizeof(ptr node[T])))
@@ -89,4 +89,4 @@ proc popTail[T](this: var vector[T]) : T =
         this.head = nil
 
 proc popHead[T](this : var vector[T]) : T =
-    
+
