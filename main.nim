@@ -29,7 +29,7 @@ for i in 0..4:
     foundation[i].known.initVector
 
 var talon : vector[Card]
-talon.initVector
+talon.initVector 
 
 #functie de printare
 proc prtTable() 

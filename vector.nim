@@ -33,7 +33,7 @@ proc `[]=`[T](this : vector[T], count : int, value: T) =
     tmp.val = value
 
 proc addTail[T](this: var vector[T], toAdd: T)=
-    # daca vect este gol
+    # daca vect este gol 
     if this.head == nil:
         this.head = cast[ptr node[T]](alloc(sizeof(ptr node[T])))
 
